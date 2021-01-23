@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install pv cgpt
+sudo apt-get install pv cgpt gnome-disk-utility
+
+gnome-disks
 
 zenity --entry --cancel-label="İptal Et" --ok-label="Devam Et" --title="ChromeOS Yükleyici" --width="360" --height="120" ChromeOS u hangi bölüme kurmak istiyorsunuz?
 BOLUM="$?"
