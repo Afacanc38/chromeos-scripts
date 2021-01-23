@@ -13,7 +13,7 @@ zenity --question --cancel-label="İptal Et" --ok-label="Devam Et" --title="Chro
 if [[ "$?" != "0" ]]; then ${opt_procedure[@]}
 else
 	sleep 5 | echo "İşlem 5 saniye içerisinde başlayacaktır. İptal etmek için Terminali HEMEN ŞİMDİ KAPATIN!"
-	sudo bash chromeos-install.sh -src samus_recovery.bin -dst $BOLUM | zenity --progress \
+	sudo bash chromeos-install.sh -src chromeos.bin -dst $BOLUM | zenity --progress \
 		--title="ChromeOS Yükleyici" \
 		--text="ChromeOS yükleniyor... İşlem tamamlana kadar terminali, bu pencereyi ve bilgisayarı kapatmayın!" \
 		--percentage=0 \
