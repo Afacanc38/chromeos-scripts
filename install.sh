@@ -4,7 +4,9 @@ sudo apt-get install pv cgpt gnome-disk-utility
 
 gnome-disks
 
-zenity --entry --cancel-label="İptal Et" --ok-label="Devam Et" --title="ChromeOS Yükleyici" --width="360" --height="120" --text="ChromeOS u hangi bölüme kurmak istiyorsunuz?"
+zenity --entry --cancel-label="İptal Et" --ok-label="Devam Et" \
+--title="ChromeOS Yükleyici" --width="360" --height="120" \
+--text="ChromeOS u hangi bölüme kurmak istiyorsunuz?"
 BOLUM="$?"
 
 zenity --question --cancel-label="İptal Et" --ok-label="Devam Et" --title="ChromeOS Yükleyici" \
